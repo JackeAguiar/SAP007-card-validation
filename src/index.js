@@ -1,3 +1,2 @@
-import validator from './validator.js';
+import validator from "./validator";
 
-console.log(validator);

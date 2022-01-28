@@ -16,14 +16,20 @@
       <div class="card">
         <h1 class="valida">Validação de Cartão</h1>
         <P class="valida">Coloque o número do seu cartão </P>
-        <input type="number" class="cardNumber"  >  
         
+        <input oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+               class="cardNumber" id="cardNumber" placeholder="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0" required=required .value 
+               type = "number"
+               maxlength = "16"
+               minlength="16"/>        
+
+        <button type="submit"> Validação </button>
  
       </div>
 
     </main>
-  
-  
+    
+
     <script src="index.js" type="module"></script>
   </body>
 </html>
