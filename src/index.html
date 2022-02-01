@@ -1,35 +1,48 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-    <title>Validação de Cartão</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  
-  <body>
+   <meta charset="UTF-8">
+   <title>Validação de Cartão</title>
+   <link rel="stylesheet" href="style.css" />
+  </head> 
 
+  <body>
     <header>
       <p></p>
     </header>
-
+    
     <main>
       <div class="card">
         <h1 class="valida">Validação de Cartão</h1>
         <P class="valida">Coloque o número do seu cartão </P>
-        
-        <input oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-               class="cardNumber" id="cardNumber" placeholder="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0" required=required .value 
-               type = "number"
-               maxlength = "16"
-               minlength="16"/>        
 
-        <button type="submit"> Validação </button>
- 
+       <form>
+         <input class="cardNumber" id="numeroDoCartao" type="number" maxlength="16" placeholder="numero do cartão "
+          value=""> 
+          <!-- oninput="validar()" -->
+
+       </form>
+         <button type="button" id="btn" class="btn">Validar</button>
+  
       </div>
 
     </main>
     
-
     <script src="index.js" type="module"></script>
+  
   </body>
 </html>
+
+
+<!-- if ((i % 2 === 0) && (numero >= 5)) {
+      
+  return (numero *2)-9;
+}
+  else if ((i % 2 === 0) && (numero <=5 )) {
+
+  return (numero *2);
+
+  }
+  else {
+    return numero;
+  } -->
