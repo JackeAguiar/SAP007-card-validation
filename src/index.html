@@ -1,37 +1,46 @@
 <!DOCTYPE html>
-<html>
-  <head>
-   <meta charset="UTF-8">
-   <title>Validação de Cartão</title>
-   <link rel="stylesheet" href="style.css" />
-  </head> 
+<html lang="pt-br">
 
-  <body>
-    <header>
-      <p></p>
-    </header>
-    
-    <main>
-      <div class="card">
-        <h1 class="valida">Validação de Cartão</h1>
-        <P class="valida">Coloque o número do seu cartão </P>
+<head>
+  <meta charset="UTF-8">
+  <title>Validação de Cartão</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-       <form>
-         <input class="cardNumber" id="numeroDoCartao" type="number" maxlength="16" placeholder="numero do cartão "
-          value=""> 
-          <!-- oninput="validar()" -->
+<body>
+  <header>
+    <h1>Valide seu cartão</h1>
+  </header>
 
-       </form>
-         <button type="button" id="btn" class="btn">Validar</button>
-  
-      </div>
+  <main>
+    <div class="card" Id="card">
+      <h1 class="valida">Validação de Cartão</h1>
+      <P class="valida">Coloque o número do seu cartão </P>
 
-    </main>
-    
-    <script src="index.js" type="module"></script>
-  
-  </body>
+      <form>
+        <input class="cardNumber" id="numeroDoCartao" type="number" maxlength="16" placeholder="numero do cartão "
+          minlength="5" value="">
+        <!-- oninput="validar()" -->
+
+      </form>
+      <button type="button" id="btn" class="btn">Validar</button>
+
+    </div>
+
+  </main>
+
+  <script src="index.js" type="module"></script>
+
+</body>
+
 </html>
+
+
+
+
+
+<!-- Vai lá no settings do seu repo que vai ter a parte do GitHub pages -->
+
 
 
 <!-- if ((i % 2 === 0) && (numero >= 5)) {
