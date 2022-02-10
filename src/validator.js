@@ -1,34 +1,51 @@
-const validator = {  
-    isValid:function (digitos) {
-        var arr = digitos.split("").reverse();
-        console.log(arr);
-     for (var numbers = 0; numbers< arr.lenght; numbers++){
-         arr[numbers] = parseInt(arr[numbers])
-         console.log(numbers)
-     }
-    var numrever = arr
-    console.log(numrever)
-    for (var i = 0; i < numrever.lenght; i++){
+let validator = {
+    isValid: function (numberCard) {
+        let arr = Array.from(numberCard)
+        let numrever = arr.reverse()
+        let num = 0
+        console.log(arr)
 
-        if(i % 2 !==0){
-            var double = numrever[i] *2;
-           numrever[i] = double;
-           if (numrever[i] > 9){
-               numrever[i] -=9;
-           }
+        for (let i = 0; i < numrever.length; i++) {
+            let numberDoIndice = Number(numrever[i])
+            console.log(numberDoIndice)
+            if (i % 2 != 0) {
+               numberDoIndice = numberDoIndice*2                                  // numrever[i] = (Number(numrever[i])) * 2
+
+                if (numberDoIndice > 9) {
+                    numberDoIndice = numberDoIndice- 9
+                    num = num +  numberDoIndice                             // Number(numrever[i])
+                }
+                else {
+                    num = num + (numberDoIndice)
+                }
+            }
+            else {
+                num = num + numberDoIndice
+            }
+        }
+             console.log(num)
+        if (num % 10 === 0) {
+            return true
+        }
+        else {
+            return false
+        }
+
+    },
+
+
+maskify: function(mask) {
+    const lastFourNumber = 4
+    let mask1 = ""
+    for (let i = 0; i < mask.length; i++) {
+        if (i >= ((mask.length) - lastFourNumber)) {
+            mask1 = mask1 + mask.charAt(i)
+        } else {
+            mask1 = mask1 + "#"
         }
     }
-    // console.log("loop", numrever);
+    return mask1
+}   
 
-   for (var i in numrever) {
-       sumNum += (numrever[i]);
-   }
-    // console.log("soma",sumNum);
-    return sumNum % 10 ===0;
 }
-   
-
-
-};
-export default validator;
-  
+export default validator
