@@ -61,7 +61,7 @@ input[type=number] {
 
 
 }
-    #finalResult{
-        font: arial; 
+    .finalResult{
+        font-family: 'IBM Plex Sans Thai Looped', sans-serif;
         color: rgb(245, 245, 245);
     }
