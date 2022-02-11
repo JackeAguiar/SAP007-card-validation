@@ -13,10 +13,10 @@ let getNumber = document.getElementById("numeroDoCartao");
         return finalResult.textContent = "Digite um número"
      }
      if (result) {
-         finalResult.textContent = mask + "Cartão válido";
+         finalResult.textContent = mask + "  CARTÃO VÁLIDO";
      }
      else{
-        finalResult.textContent = mask + "Cartão inválido";
+        finalResult.textContent = mask + "  CARTÃO INVÁLIDO";
 
      }
      document.getElementById("numeroDoCartao").value = "";
