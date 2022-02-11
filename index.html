@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Validação de Cartão</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@300&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>Valide seu cartão</h1>
+  </header>
+
+  <main>
+    <div class="card" id="card">
+      <h1 class="valida">Insira o número do seu cartão&#128179;</h1>
+
+
+      <form>
+        <input class="cardNumber" id="numeroDoCartao" type="number" maxlength="16" placeholder="numero do cartão "
+          minlength="5" value="">
+
+      </form>
+      <button type="button" id="btn" class="btn">&#10004;Validar</button>
+      <p id = "finalResult" class ="finalResult" ></p>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="sobreAlgoritmo">
+      Como é feita a validação do cartão ? 
+      <br>
+      <br>
+      Para a validação do seu cartão usamos o algoritmo de Luhn. Mas o que é algoritmo de Luhn? O algoritmo de Luhn,
+      também chamado de módulo 10, é um método de soma de verificação, usado para validar números de identificação, como
+      o
+      IMEI de telefones celulares, cartões de crédito etc.
+
+      Esse algoritmo é simples. Obtemos o inverso do número a ser verificado (que contém apenas dígitos [0-9]); todos os
+      números que ocupam uma posição par devem ser multiplicados por dois; se esse número for maior ou igual a 10,
+      devemos
+      adicionar os dígitos do resultado; o número a verificar será válido se a soma de seus dígitos finais for um
+      múltiplo
+      de 10.
+    </div>
+    Desenvolvido por Jackeline
+
+  </footer>
+
+  <script src="index.js" type="module"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+<!-- Vai lá no settings do seu repo que vai ter a parte do GitHub pages -->
+
+
+
