@@ -2,7 +2,7 @@ let validator = {
     isValid: function (numberCard) {
         let arr = Array.from(numberCard)
         let numrever = arr.reverse()
-        let num = 0
+        let total = 0
 
         for (let i = 0; i < numrever.length; i++) {
             let numberDoIndice = Number(numrever[i])
@@ -10,17 +10,17 @@ let validator = {
                numberDoIndice = numberDoIndice*2                                  
                 if (numberDoIndice > 9) {
                     numberDoIndice = numberDoIndice- 9
-                    num = num +  numberDoIndice                           
+                    total = total +  numberDoIndice                           
                 }
                 else {
-                    num = num + (numberDoIndice)
+                    total = total + (numberDoIndice)
                 }
             }
             else {
-                num = num + numberDoIndice
+                total = total + numberDoIndice
             }
         }
-        if (num % 10 === 0) {
+        if (total % 10 === 0) {
             return true
         }
         else {
@@ -32,15 +32,15 @@ let validator = {
 
 maskify: function(mask) {
     const lastFourNumber = 4
-    let mask1 = ""
+    let mascarar = ""
     for (let i = 0; i < mask.length; i++) {
         if (i >= ((mask.length) - lastFourNumber)) {
-            mask1 = mask1 + mask.charAt(i)
+            mascarar = mascarar + mask.charAt(i)
         } else {
-            mask1 = mask1 + "#"
+            mascarar = mascarar + "#"
         }
     }
-    return mask1
+    return mascarar
 }   
 
 }
