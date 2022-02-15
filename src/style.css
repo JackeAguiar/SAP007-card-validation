@@ -6,9 +6,12 @@ body{
 
 header{
      background-color: #617dd6;
-     height: 65px;
+     height: 200px;
      border-radius: 20px;
      text-align: center;
+}
+.sobreAlgoritmo{
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif; 
 }
 
 .card{
@@ -42,26 +45,17 @@ header{
 input[type=number] { 
    -moz-appearance: textfield;
    appearance: textfield;
-
 } 
+
 .btn{
     background-color:#49d04e;
     height: 30px;
     border: 1px solid rgb(41, 236, 57);
     border-radius: 50px;
     text-align: center;
-
 }
-.sobreAlgoritmo{
-    background-color:#a6bcf4;
-    border: 1px solid;
-    border-radius: 20px;
-    margin: 20px;
+
+.finalResult{
     font-family: 'IBM Plex Sans Thai Looped', sans-serif;
-
-
+    color: rgb(245, 245, 245);
 }
-    .finalResult{
-        font-family: 'IBM Plex Sans Thai Looped', sans-serif;
-        color: rgb(245, 245, 245);
-    }

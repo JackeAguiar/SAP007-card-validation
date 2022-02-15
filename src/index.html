@@ -14,29 +14,8 @@
 <body>
   <header>
     <h1>Valide seu cartão</h1>
-  </header>
-
-  <main>
-    <div class="card" id="card">
-      <h1 class="valida">Insira o número do seu cartão&#128179;</h1>
-
-
-      <form>
-        <input class="cardNumber" id="numeroDoCartao" type="number" maxlength="16" placeholder="numero do cartão "
-          minlength="5" value="">
-
-      </form>
-      <button type="button" id="btn" class="btn">&#10004;Validar</button>
-      <p id = "finalResult" class ="finalResult" ></p>
-
-    </div>
-  </main>
-
-  <footer>
-    <div class="sobreAlgoritmo">
-      Como é feita a validação do cartão ? 
-      <br>
-      <br>
+   <div class="sobreAlgoritmo">
+    <div> Como é feita a validação do cartão ? </div>  
       Para a validação do seu cartão usamos o algoritmo de Luhn. Mas o que é algoritmo de Luhn? O algoritmo de Luhn,
       também chamado de módulo 10, é um método de soma de verificação, usado para validar números de identificação, como
       o
@@ -49,8 +28,23 @@
       múltiplo
       de 10.
     </div>
-    Desenvolvido por Jackeline
+  </header>
 
+  <main>
+    <div class="card" id="card">
+      <h1 class="valida">Insira o número do seu cartão&#128179;</h1>
+
+      <form>
+        <input class="cardNumber" id="numeroDoCartao" type="number" maxlength="16" placeholder="numero do cartão "
+          minlength="5" value="">
+      </form>
+      <button type="button" id="btn" class="btn">&#10004;Validar</button>
+      <p id = "finalResult" class ="finalResult" ></p>
+    </div>
+  </main>
+
+  <footer>
+    Desenvolvido por Jackeline
   </footer>
 
   <script src="index.js" type="module"></script>
@@ -62,8 +56,6 @@
 
 
 
-
-<!-- Vai lá no settings do seu repo que vai ter a parte do GitHub pages -->
 
 
 
