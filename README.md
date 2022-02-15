@@ -34,11 +34,11 @@ seus dígitos finais for um múltiplo de 10.
  
 ## 3. Tecnologias utilizadas
  As seguintes ferramentas foram usadas na construção do projeto:
- -[HTML5]
- -[CSS3]
- -[JavaScript-Vanilla]
- -[Node.js]
- -[Git-e-GitHub]
+<p>HTML5</p>
+<P>CSS3<>
+<p> JavaScript-Vanilla</p>
+<p> Node.js</p>
+<p> Git-e-GitHub</p>
 
 ## 4. Protótipo 
  Esse projeto é bem simples e fácil de entender, para que usuários de todas as idades possam usar sem dificuldades 
