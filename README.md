@@ -35,7 +35,7 @@ seus dígitos finais for um múltiplo de 10.
 ## 3. Tecnologias utilizadas
  As seguintes ferramentas foram usadas na construção do projeto:
 <p>HTML5</p>
-<P>CSS3<>
+<P>CSS3</p>
 <p> JavaScript-Vanilla</p>
 <p> Node.js</p>
 <p> Git-e-GitHub</p>
